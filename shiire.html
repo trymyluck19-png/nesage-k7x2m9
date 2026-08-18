@@ -30,12 +30,12 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
 .links{margin-top:4px;font-size:11px} .links a{color:#7ab8ff;text-decoration:none;margin-right:8px}
 .hide{display:none}
 </style></head><body>
-<div class="head"><h1>仕入候補ギャラリー</h1><span class="sub">249件(重複除去済) / 生成 09:13(<span class="age" data-ts="1787012022"></span>) / 3分毎に自動再読込</span>
+<div class="head"><h1>仕入候補ギャラリー</h1><span class="sub">249件(重複除去済) / 生成 09:17(<span class="age" data-ts="1787012267"></span>) / 3分毎に自動再読込</span>
 <div class="nav"><span class="cur">スキャナー</span><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shinchaku.html">楽天新着</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/rakuten.html">楽天値下げ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/bookoff.html">ブックオフ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/yahoo.html">ヤフオク値下げ</a></div>
 <div class="filters">
-<button class="on" data-f="f">すべて</button>
+<button data-f="f">すべて</button>
 <button data-f="p3">利益¥3,000+</button>
-<button data-f="p0">利益あり</button>
+<button class="on" data-f="p0">利益あり</button>
 <button data-f="pm">赤字(参考)</button>
 </div></div>
 <div class="grid"><div class="card f pm">
@@ -2287,6 +2287,10 @@ document.querySelectorAll(".filters button").forEach(b=>b.onclick=()=>{
  const f=b.dataset.f;
  document.querySelectorAll(".card").forEach(c=>c.classList.toggle("hide",!c.classList.contains(f)));
 });
+// 初期フィルタ適用(デフォルト=利益あり。「すべて」はタップで切替)
+(function(){const b=document.querySelector(".filters button.on");
+ if(b&&b.dataset.f!=="f"){const f=b.dataset.f;
+  document.querySelectorAll(".card").forEach(c=>c.classList.toggle("hide",!c.classList.contains(f)));}})();
 
 function agefmt(t){var d=Math.floor(Date.now()/1000)-t;
  if(d<60)return'たった今';if(d<3600)return Math.floor(d/60)+'分前';
