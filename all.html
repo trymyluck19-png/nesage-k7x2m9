@@ -31,7 +31,7 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
 .links{margin-top:4px;font-size:11px} .links a{color:#7ab8ff;text-decoration:none}
 .hide{display:none}
 </style></head><body>
-<div class="head"><h1>仕入フィード</h1><span class="sub">304件 / 生成 10:41(<span class="age" data-ts="1787190107"></span>) / 開いた時に自動で最新化</span>
+<div class="head"><h1>仕入フィード</h1><span class="sub">304件 / 生成 10:43(<span class="age" data-ts="1787190230"></span>) / 開いた時に自動で最新化</span>
 <div class="nav"><span class="cur">フィード</span><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shiire.html">スキャナー</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shinchaku.html">楽天新着</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/rakuten.html">楽天値下げ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/bookoff.html">ブックオフ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/yahoo.html">ヤフオク値下げ</a></div>
 <div class="filters"><button class="on" data-s="*">すべて</button><button data-s="メルカリ">メルカリ</button><button data-s="ヤフオク">ヤフオク</button><button data-s="Yフリマ">Yフリマ</button><button data-s="楽天">楽天</button><button data-s="ブックオフ">ブックオフ</button><button data-s="トレファク">トレファク</button><button data-s="スニダン">スニダン</button></div>
 </div>
@@ -2179,5 +2179,54 @@ function tickAges(){document.querySelectorAll('.age').forEach(function(e){
  e.textContent=agefmt(+e.dataset.ts);});}
 tickAges();setInterval(tickAges,30000);
 
-(function(){var g=1787190107;function stale(){return Date.now()/1000-g>120}function re(){location.replace(location.pathname+'?v='+Date.now())}document.addEventListener('visibilitychange',function(){if(!document.hidden&&stale())re()});window.addEventListener('pageshow',function(e){if(e.persisted&&stale())re()});if(stale()&&location.search.indexOf('v=')<0)re();})();
+
+const FEEDURL='https://raw.githubusercontent.com/trymyluck19-png/nesage-k7x2m9/main/feed.json';
+let liveGen=1787190230;
+function cardEl(r){
+ const d=document.createElement('div');d.className='card';d.dataset.src=r.src||'';
+ const a=document.createElement('a');a.className='thumb';a.href=r.url||'#';a.target='_blank';
+ if(r.img){const im=document.createElement('img');im.src=r.img;im.loading='lazy';
+  im.referrerPolicy='no-referrer';a.appendChild(im);}
+ else{const n=document.createElement('div');n.className='noimg';n.textContent='画像なし';a.appendChild(n);}
+ if(r.profit!=null){const b=document.createElement('span');b.className='badge good';
+  b.textContent='+¥'+Number(r.profit).toLocaleString();a.appendChild(b);}
+ d.appendChild(a);
+ const body=document.createElement('div');body.className='body';
+ const pr=document.createElement('div');pr.className='price';
+ pr.textContent=(r.note||'')+(r.price?('¥'+Number(r.price).toLocaleString()):'');
+ const c1=document.createElement('span');c1.className='chip';c1.textContent=r.src||'';pr.appendChild(c1);
+ const c2=document.createElement('span');c2.className='chip k';c2.textContent=r.kind||'';pr.appendChild(c2);
+ body.appendChild(pr);
+ const nm=document.createElement('div');nm.className='name';nm.textContent=r.name||'';body.appendChild(nm);
+ const mt=document.createElement('div');mt.className='meta';
+ const ag=document.createElement('span');ag.className='age';ag.dataset.ts=r.ts||0;mt.appendChild(ag);
+ body.appendChild(mt);
+ const lk=document.createElement('div');lk.className='links';
+ const l1=document.createElement('a');l1.href=r.url||'#';l1.target='_blank';l1.textContent='商品↗';
+ lk.appendChild(l1);body.appendChild(lk);
+ d.appendChild(body);
+ return d;
+}
+async function liveRefresh(){
+ try{
+  const res=await fetch(FEEDURL+'?v='+Date.now(),{cache:'no-store'});
+  if(!res.ok)return;
+  const j=await res.json();
+  if(!j.items||j.gen<=liveGen)return;
+  liveGen=j.gen;
+  const g=document.querySelector('.grid');g.innerHTML='';
+  j.items.forEach(r=>g.appendChild(cardEl(r)));
+  const sub=document.querySelector('.sub');
+  if(sub){sub.innerHTML=j.items.length+'件 / ライブ更新 <span class="age" data-ts="'+j.gen+'"></span>';}
+  tickAges();
+  const on=document.querySelector('.filters button.on');
+  if(on&&on.dataset.s!=='*'){const s=on.dataset.s;
+   document.querySelectorAll('.card').forEach(c=>c.classList.toggle('hide',c.dataset.src!==s));}
+ }catch(e){}
+}
+liveRefresh();
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)liveRefresh()});
+window.addEventListener('pageshow',e=>{if(e.persisted)liveRefresh()});
+setInterval(()=>{if(!document.hidden)liveRefresh()},60000);
+
 </script></body></html>
