@@ -33,11 +33,18 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
 .links{margin-top:4px;font-size:11px} .links a{color:#7ab8ff;text-decoration:none}
 .hide{display:none}
 </style></head><body>
-<div class="head"><h1>仕入フィード</h1><span class="sub">356件 / 生成 00:31(<span class="age" data-ts="1787239864"></span>)</span> <button id="reloadbtn">↻ 更新</button>
+<div class="head"><h1>仕入フィード</h1><span class="sub">356件 / 生成 00:37(<span class="age" data-ts="1787240240"></span>)</span> <button id="reloadbtn">↻ 更新</button>
 <div class="nav"><span class="cur">フィード</span><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shiire.html">スキャナー</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shinchaku.html">楽天新着</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/rakuten.html">楽天値下げ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/bookoff.html">ブックオフ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/yahoo.html">ヤフオク値下げ</a></div>
 <div class="filters"><button class="on" data-s="*">すべて</button><button data-s="メルカリ">メルカリ</button><button data-s="ヤフオク">ヤフオク</button><button data-s="Yフリマ">Yフリマ</button><button data-s="楽天">楽天</button><button data-s="ブックオフ">ブックオフ</button><button data-s="トレファク">トレファク</button><button data-s="スニダン">スニダン</button></div>
 </div>
-<div class="grid"><div class="card" data-src="トレファク">
+<div class="grid"><div class="card" data-src="メルカリ">
+<a class="thumb" href="https://jp.mercari.com/item/m79499927490" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m79499927490_1.jpg?1787240030" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥9,377</span></a>
+<div class="body">
+ <div class="price">¥8,800 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
+ <div class="name">【極美品】ジョーダンジャンプマンTWO TREY JORDAN JUMPMAN</div>
+ <div class="meta"><span class="age" data-ts="1787240229"></span></div>
+ <div class="links"><a href="https://jp.mercari.com/item/m79499927490" target="_blank">商品↗</a><a href="https://stockx.com/air-jordan-jumpman-two-trey-concord-royal" target="_blank">StockX↗</a></div>
+</div></div><div class="card" data-src="トレファク">
 <a class="thumb" href="https://www.trefac.jp/store/3021006257622402/c4129699/" target="_blank"><img src="https://www.trefac.jp/image/item/3021006257622402/w384/3021006257622402_01_9555w.jpeg" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥767</span></a>
 <div class="body">
  <div class="price">¥15,400 <span class="chip">トレファク</span><span class="chip k">利益</span></div>
@@ -2396,13 +2403,6 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
  <div class="name">NIKE JORDAN LEGACY 312 AQ4160-108 26.5cm</div>
  <div class="meta"><span class="age" data-ts="1786971376"></span></div>
  <div class="links"><a href="https://jp.mercari.com/item/m17439939348" target="_blank">商品↗</a><a href="https://stockx.com/air-jordan-legacy-312-tech-challenge-2-hot-lava" target="_blank">StockX↗</a></div>
-</div></div><div class="card" data-src="メルカリ">
-<a class="thumb" href="https://jp.mercari.com/item/m78868701220" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m78868701220_1.jpg?1783496160" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥6,361</span></a>
-<div class="body">
- <div class="price">¥20,200 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
- <div class="name">新品NIKE エアジョーダン 3 デニム27.5cm 日本限定</div>
- <div class="meta"><span class="age" data-ts="1786970650"></span></div>
- <div class="links"><a href="https://jp.mercari.com/item/m78868701220" target="_blank">商品↗</a><a href="https://stockx.com/air-jordan-3-retro-se-t-fire-red" target="_blank">StockX↗</a></div>
 </div></div><div class="card" data-src="Yフリマ">
 <a class="thumb" href="https://paypayfleamarket.yahoo.co.jp/item/z658720446" target="_blank"><div class="noimg">画像なし</div><span class="badge good">+¥26</span></a>
 <div class="body">
@@ -2548,7 +2548,7 @@ tickAges();setInterval(tickAges,30000);
 
 const FEEDURL='https://raw.githubusercontent.com/trymyluck19-png/nesage-k7x2m9/main/feed.json';
 const FEEDAPI='https://api.github.com/repos/trymyluck19-png/nesage-k7x2m9/contents/feed.json?ref=main';
-let liveGen=1787239864;
+let liveGen=1787240240;
 function cardEl(r){
  const d=document.createElement('div');d.className='card';d.dataset.src=r.src||'';
  const a=document.createElement('a');a.className='thumb';a.href=r.url||'#';a.target='_blank';
