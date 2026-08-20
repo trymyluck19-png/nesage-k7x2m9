@@ -33,7 +33,7 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
 .links{margin-top:4px;font-size:11px} .links a{color:#7ab8ff;text-decoration:none}
 .hide{display:none}
 </style></head><body>
-<div class="head"><h1>仕入フィード</h1><span class="sub">311件 / 生成 13:27(<span class="age" data-ts="1787200024"></span>)</span> <button id="reloadbtn">↻ 更新</button>
+<div class="head"><h1>仕入フィード</h1><span class="sub">311件 / 生成 13:28(<span class="age" data-ts="1787200115"></span>)</span> <button id="reloadbtn">↻ 更新</button>
 <div class="nav"><span class="cur">フィード</span><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shiire.html">スキャナー</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shinchaku.html">楽天新着</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/rakuten.html">楽天値下げ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/bookoff.html">ブックオフ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/yahoo.html">ヤフオク値下げ</a></div>
 <div class="filters"><button class="on" data-s="*">すべて</button><button data-s="メルカリ">メルカリ</button><button data-s="ヤフオク">ヤフオク</button><button data-s="Yフリマ">Yフリマ</button><button data-s="楽天">楽天</button><button data-s="ブックオフ">ブックオフ</button><button data-s="トレファク">トレファク</button><button data-s="スニダン">スニダン</button></div>
 </div>
@@ -2232,7 +2232,8 @@ tickAges();setInterval(tickAges,30000);
 
 
 const FEEDURL='https://raw.githubusercontent.com/trymyluck19-png/nesage-k7x2m9/main/feed.json';
-let liveGen=1787200024;
+const FEEDAPI='https://api.github.com/repos/trymyluck19-png/nesage-k7x2m9/contents/feed.json?ref=main';
+let liveGen=1787200115;
 function cardEl(r){
  const d=document.createElement('div');d.className='card';d.dataset.src=r.src||'';
  const a=document.createElement('a');a.className='thumb';a.href=r.url||'#';a.target='_blank';
@@ -2261,11 +2262,23 @@ function cardEl(r){
  d.appendChild(body);
  return d;
 }
-async function liveRefresh(){
+async function fetchFeed(fresh){
+ // fresh=true: GitHub API(キャッシュ皆無・60req/h制限あり→手動操作時のみ)
+ // fresh=false: raw(CDNキャッシュ最大5分・自動ポーリング用)
+ if(fresh){
+  try{
+   const r=await fetch(FEEDAPI,{headers:{Accept:'application/vnd.github.raw'},cache:'no-store'});
+   if(r.ok)return await r.json();
+  }catch(e){}
+ }
+ const r2=await fetch(FEEDURL+'?v='+Date.now(),{cache:'no-store'});
+ if(!r2.ok)return null;
+ return await r2.json();
+}
+async function liveRefresh(fresh){
  try{
-  const res=await fetch(FEEDURL+'?v='+Date.now(),{cache:'no-store'});
-  if(!res.ok)return;
-  const j=await res.json();
+  const j=await fetchFeed(!!fresh);
+  if(!j)return;
   if(!j.items||j.gen<=liveGen)return;
   liveGen=j.gen;
   const g=document.querySelector('.grid');g.innerHTML='';
@@ -2278,12 +2291,12 @@ async function liveRefresh(){
    document.querySelectorAll('.card').forEach(c=>c.classList.toggle('hide',c.dataset.src!==s));}
  }catch(e){}
 }
-liveRefresh();
-document.addEventListener('visibilitychange',()=>{if(!document.hidden)liveRefresh()});
-window.addEventListener('pageshow',e=>{if(e.persisted)liveRefresh()});
-setInterval(()=>{if(!document.hidden)liveRefresh()},60000);
+liveRefresh(true);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)liveRefresh(true)});
+window.addEventListener('pageshow',e=>{if(e.persisted)liveRefresh(true)});
+setInterval(()=>{if(!document.hidden)liveRefresh(false)},60000);
 const rb=document.getElementById('reloadbtn');
 if(rb){rb.onclick=async()=>{rb.disabled=true;rb.textContent='更新中…';
- liveGen=0;await liveRefresh();rb.textContent='↻ 更新';rb.disabled=false;};}
+ liveGen=0;await liveRefresh(true);rb.textContent='↻ 更新';rb.disabled=false;};}
 
 </script></body></html>
