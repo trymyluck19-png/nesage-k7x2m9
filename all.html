@@ -14,8 +14,9 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
 .filters{margin-top:8px}
 .filters button{background:#222;color:#ddd;border:1px solid #444;border-radius:14px;padding:4px 12px;margin-right:6px;margin-bottom:4px;font-size:12px;cursor:pointer}
 .filters button.on{background:#2e6b2e;border-color:#4a4}
-#reloadbtn{background:#2a3f5c;color:#fff;border:1px solid #4a6;border-radius:14px;padding:4px 14px;font-size:12px;cursor:pointer;vertical-align:middle}
-#reloadbtn:active{opacity:.6}
+#reloadbtn,#chromebtn{background:#2a3f5c;color:#fff;border:1px solid #4a6;border-radius:14px;padding:4px 14px;font-size:12px;cursor:pointer;vertical-align:middle}
+#reloadbtn:active,#chromebtn:active{opacity:.6}
+#chromebtn.on{background:#2e6b2e;border-color:#4a4}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;padding:10px}
 @media(min-width:700px){.grid{grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}}
 .card{background:#1b1b1b;border:1px solid #2c2c2c;border-radius:10px;overflow:hidden}
@@ -33,7 +34,7 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
 .links{margin-top:4px;font-size:11px} .links a{color:#7ab8ff;text-decoration:none}
 .hide{display:none}
 </style></head><body>
-<div class="head"><h1>仕入フィード</h1><span class="sub">357件 / 生成 10:39(<span class="age" data-ts="1787276390"></span>)</span> <button id="reloadbtn">↻ 更新</button>
+<div class="head"><h1>仕入フィード</h1><span class="sub">357件 / 生成 10:45(<span class="age" data-ts="1787276732"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
 <div class="nav"><span class="cur">フィード</span><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shiire.html">スキャナー</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shinchaku.html">楽天新着</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/rakuten.html">楽天値下げ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/bookoff.html">ブックオフ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/yahoo.html">ヤフオク値下げ</a></div>
 <div class="filters"><button class="on" data-s="*">すべて</button><button data-s="メルカリ">メルカリ</button><button data-s="ヤフオク">ヤフオク</button><button data-s="Yフリマ">Yフリマ</button><button data-s="楽天">楽天</button><button data-s="ブックオフ">ブックオフ</button><button data-s="トレファク">トレファク</button><button data-s="スニダン">スニダン</button></div>
 </div>
@@ -2555,7 +2556,7 @@ tickAges();setInterval(tickAges,30000);
 
 const FEEDURL='https://raw.githubusercontent.com/trymyluck19-png/nesage-k7x2m9/main/feed.json';
 const FEEDAPI='https://api.github.com/repos/trymyluck19-png/nesage-k7x2m9/contents/feed.json?ref=main';
-let liveGen=1787276390;
+let liveGen=1787276732;
 function cardEl(r){
  const d=document.createElement('div');d.className='card';d.dataset.src=r.src||'';
  const a=document.createElement('a');a.className='thumb';a.href=r.url||'#';a.target='_blank';
@@ -2612,12 +2613,27 @@ async function liveRefresh(fresh){
   const on=document.querySelector('.filters button.on');
   if(on&&on.dataset.s!=='*'){const s=on.dataset.s;
    document.querySelectorAll('.card').forEach(c=>c.classList.toggle('hide',c.dataset.src!==s));}
+  if(typeof applyChrome==='function')applyChrome();
  }catch(e){}
 }
 liveRefresh(true);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)liveRefresh(true)});
 window.addEventListener('pageshow',e=>{if(e.persisted)liveRefresh(true)});
 setInterval(()=>{if(!document.hidden)liveRefresh(false)},60000);
+let chromeMode=localStorage.getItem('chromeMode')==='1';
+function chromeHref(h){return (h||'').replace(/^https:\/\//,'googlechromes://').replace(/^http:\/\//,'googlechrome://');}
+function applyChrome(){
+ document.querySelectorAll('a.thumb,.links a').forEach(a=>{
+  if(!a.dataset.orig)a.dataset.orig=a.getAttribute('href')||'';
+  a.setAttribute('href',chromeMode?chromeHref(a.dataset.orig):a.dataset.orig);
+ });
+ const cb=document.getElementById('chromebtn');
+ if(cb){cb.textContent='Chrome:'+(chromeMode?'ON':'OFF');cb.classList.toggle('on',chromeMode);}
+}
+const cb=document.getElementById('chromebtn');
+if(cb){cb.onclick=()=>{chromeMode=!chromeMode;
+ localStorage.setItem('chromeMode',chromeMode?'1':'0');applyChrome();};}
+applyChrome();
 const rb=document.getElementById('reloadbtn');
 if(rb){rb.onclick=async()=>{rb.disabled=true;rb.textContent='更新中…';
  liveGen=0;await liveRefresh(true);rb.textContent='↻ 更新';rb.disabled=false;};}
