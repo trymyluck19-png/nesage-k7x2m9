@@ -34,11 +34,18 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
 .links{margin-top:4px;font-size:11px} .links a{color:#7ab8ff;text-decoration:none}
 .hide{display:none}
 </style></head><body>
-<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 21:53(<span class="age" data-ts="1788267222"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
+<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 21:55(<span class="age" data-ts="1788267312"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
 <div class="nav"><span class="cur">フィード</span><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shiire.html">スキャナー</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shinchaku.html">楽天新着</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/rakuten.html">楽天値下げ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/bookoff.html">ブックオフ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/yahoo.html">ヤフオク値下げ</a></div>
 <div class="filters"><button class="on" data-s="*">すべて</button><button data-s="メルカリ">メルカリ</button><button data-s="ヤフオク">ヤフオク</button><button data-s="Yフリマ">Yフリマ</button><button data-s="楽天">楽天</button><button data-s="ブックオフ">ブックオフ</button><button data-s="トレファク">トレファク</button><button data-s="スニダン">スニダン</button><button data-s="セカスト">セカスト</button></div>
 </div>
-<div class="grid"><div class="card" data-src="Yフリマ">
+<div class="grid"><div class="card" data-src="トレファク">
+<a class="thumb" href="https://www.trefac.jp/store/3086001263979370/c4322534/" target="_blank"><img src="https://www.trefac.jp/image/item/3086001263979370/w384/3086001263979370_01_0133w.jpeg" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥5,930</span></a>
+<div class="body">
+ <div class="price">¥6,600 <span class="chip">トレファク</span><span class="chip k">利益</span></div>
+ <div class="name">メンズNIKE SBサイズ：25.5￥6,600税込</div>
+ <div class="meta"><span class="age" data-ts="1788267311"></span></div>
+ <div class="links"><a href="https://www.trefac.jp/store/3086001263979370/c4322534/" target="_blank">商品↗</a><a href="https://stockx.com/nike-sb-dunk-low-pro-iso-orange-label-court-purple" target="_blank">StockX↗</a></div>
+</div></div><div class="card" data-src="Yフリマ">
 <a class="thumb" href="https://paypayfleamarket.yahoo.co.jp/item/z473660788" target="_blank"><img src="https://auctions.c.yimg.jp/images.auctions.yahoo.co.jp/image/dr000/auc0108/users/4ae43381105efaa3454c29a6f7320844395f43a5/i-img1200x900-17550801733497ywi9c.jpg" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥13,811</span></a>
 <div class="body">
  <div class="price">¥29,300 <span class="chip">Yフリマ</span><span class="chip k">利益</span></div>
@@ -2369,13 +2376,6 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
  <div class="name">NEWメンズNIKE×FRAGMENT DESIGNサイズ：27￥8,800税込</div>
  <div class="meta"><span class="age" data-ts="1788183026"></span></div>
  <div class="links"><a href="https://www.trefac.jp/store/3084002035571401/c4337871/" target="_blank">商品↗</a><a href="https://stockx.com/nike-dunk-high-fragment-design-beijing-2021" target="_blank">StockX↗</a></div>
-</div></div><div class="card" data-src="トレファク">
-<a class="thumb" href="https://www.trefac.jp/store/3114000048669547/c4181142/" target="_blank"><img src="https://www.trefac.jp/image/item/3114000048669547/w384/3114000048669547_01_3531w.jpeg" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥7,087</span></a>
-<div class="body">
- <div class="price">¥6,600 <span class="chip">トレファク</span><span class="chip k">利益</span></div>
- <div class="name">SALEメンズNIKEサイズ：US11.5￥6,600税込</div>
- <div class="meta"><span class="age" data-ts="1788183026"></span></div>
- <div class="links"><a href="https://www.trefac.jp/store/3114000048669547/c4181142/" target="_blank">商品↗</a><a href="https://stockx.com/nike-sb-dunk-low-navy-gum" target="_blank">StockX↗</a></div>
 </div></div><div class="card" data-src="スニダン">
 <a class="thumb" href="https://snkrdunk.com/products/DB0732-200/used/49614218" target="_blank"><div class="noimg">画像なし</div><span class="badge good">+¥5,223</span></a>
 <div class="body">
@@ -3557,7 +3557,7 @@ tickAges();setInterval(tickAges,30000);
 
 const FEEDURL='https://raw.githubusercontent.com/trymyluck19-png/nesage-k7x2m9/main/feed.json';
 const FEEDAPI='https://api.github.com/repos/trymyluck19-png/nesage-k7x2m9/contents/feed.json?ref=main';
-let liveGen=1788267222;
+let liveGen=1788267312;
 const SHELLV=3;
 function cardEl(r){
  const d=document.createElement('div');d.className='card';d.dataset.src=r.src||'';
