@@ -34,11 +34,18 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
 .links{margin-top:4px;font-size:11px} .links a{color:#7ab8ff;text-decoration:none}
 .hide{display:none}
 </style></head><body>
-<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 20:19(<span class="age" data-ts="1788520770"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
+<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 20:25(<span class="age" data-ts="1788521106"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
 <div class="nav"><span class="cur">フィード</span><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shiire.html">スキャナー</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shinchaku.html">楽天新着</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/rakuten.html">楽天値下げ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/bookoff.html">ブックオフ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/yahoo.html">ヤフオク値下げ</a></div>
 <div class="filters"><button class="on" data-s="*">すべて</button><button data-s="メルカリ">メルカリ</button><button data-s="ヤフオク">ヤフオク</button><button data-s="Yフリマ">Yフリマ</button><button data-s="楽天">楽天</button><button data-s="ブックオフ">ブックオフ</button><button data-s="トレファク">トレファク</button><button data-s="スニダン">スニダン</button><button data-s="セカスト">セカスト</button></div>
 </div>
-<div class="grid"><div class="card" data-src="メルカリ">
+<div class="grid"><div class="card" data-src="トレファク">
+<a class="thumb" href="https://www.trefac.jp/store/3006010884224048/c4350490/" target="_blank"><img src="https://www.trefac.jp/image/item/3006010884224048/w384/3006010884224048_01_5724w.jpeg" loading="lazy" referrerpolicy="no-referrer"><span class="badge bad">▲¥12,189</span></a>
+<div class="body">
+ <div class="price">¥27,500 <span class="chip">トレファク</span><span class="chip k">新着</span></div>
+ <div class="name">NEWメンズNIKEサイズ：25㎝￥27,500税込</div>
+ <div class="meta"><span class="age" data-ts="1788521106"></span></div>
+ <div class="links"><a href="https://www.trefac.jp/store/3006010884224048/c4350490/" target="_blank">商品↗</a><a href="https://stockx.com/nike-sb-dunk-low-atmos-elephant" target="_blank">StockX↗</a></div>
+</div></div><div class="card" data-src="メルカリ">
 <a class="thumb" href="https://jp.mercari.com/item/m12229552766" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m12229552766_1.jpg?1788248877" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥42,805</span></a>
 <div class="body">
  <div class="price">¥98,000 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
@@ -2579,13 +2586,6 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
  <div class="name">SALEメンズNIKE×A Ma Maniereサイズ：28￥19,800税込</div>
  <div class="meta"><span class="age" data-ts="1788432950"></span></div>
  <div class="links"><a href="https://www.trefac.jp/store/3005020059264044/c3941677/" target="_blank">商品↗</a><a href="https://stockx.com/search?s=FZ4810-200" target="_blank">StockX↗</a></div>
-</div></div><div class="card" data-src="トレファク">
-<a class="thumb" href="https://www.trefac.jp/store/3005020026051044/c3927920/" target="_blank"><img src="https://www.trefac.jp/image/item/3005020026051044/w384/3005020026051044_01_0566w.jpeg" loading="lazy" referrerpolicy="no-referrer"></a>
-<div class="body">
- <div class="price">¥14,300 <span class="chip">トレファク</span><span class="chip k">新着</span></div>
- <div class="name">SALEメンズNIKEサイズ：26.5cm￥14,300税込</div>
- <div class="meta"><span class="age" data-ts="1788432950"></span></div>
- <div class="links"><a href="https://www.trefac.jp/store/3005020026051044/c3927920/" target="_blank">商品↗</a><a href="https://stockx.com/search?s=IB8967-004" target="_blank">StockX↗</a></div>
 </div></div><div class="card" data-src="メルカリ">
 <a class="thumb" href="https://jp.mercari.com/item/m92897599375" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m92897599375_1.jpg?1788430316" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥319</span></a>
 <div class="body">
@@ -3557,7 +3557,7 @@ tickAges();setInterval(tickAges,30000);
 
 const FEEDURL='https://raw.githubusercontent.com/trymyluck19-png/nesage-k7x2m9/main/feed.json';
 const FEEDAPI='https://api.github.com/repos/trymyluck19-png/nesage-k7x2m9/contents/feed.json?ref=main';
-let liveGen=1788520770;
+let liveGen=1788521106;
 const SHELLV=3;
 function cardEl(r){
  const d=document.createElement('div');d.className='card';d.dataset.src=r.src||'';
