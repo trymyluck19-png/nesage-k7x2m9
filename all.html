@@ -34,11 +34,18 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
 .links{margin-top:4px;font-size:11px} .links a{color:#7ab8ff;text-decoration:none}
 .hide{display:none}
 </style></head><body>
-<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 12:05(<span class="age" data-ts="1788491153"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
+<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 12:12(<span class="age" data-ts="1788491568"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
 <div class="nav"><span class="cur">フィード</span><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shiire.html">スキャナー</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shinchaku.html">楽天新着</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/rakuten.html">楽天値下げ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/bookoff.html">ブックオフ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/yahoo.html">ヤフオク値下げ</a></div>
 <div class="filters"><button class="on" data-s="*">すべて</button><button data-s="メルカリ">メルカリ</button><button data-s="ヤフオク">ヤフオク</button><button data-s="Yフリマ">Yフリマ</button><button data-s="楽天">楽天</button><button data-s="ブックオフ">ブックオフ</button><button data-s="トレファク">トレファク</button><button data-s="スニダン">スニダン</button><button data-s="セカスト">セカスト</button></div>
 </div>
-<div class="grid"><div class="card" data-src="ヤフオク">
+<div class="grid"><div class="card" data-src="スニダン">
+<a class="thumb" href="https://snkrdunk.com/products/DB5877-100/used/49731099" target="_blank"><div class="noimg">画像なし</div><span class="badge good">+¥3,983</span></a>
+<div class="body">
+ <div class="price">¥29,999 <span class="chip">スニダン</span><span class="chip k">利益</span></div>
+ <div class="name">Nike Air Jordan 1 Retro High OG &quot;Midnight Navy&quot;</div>
+ <div class="meta"><span class="age" data-ts="1788491169"></span></div>
+ <div class="links"><a href="https://snkrdunk.com/products/DB5877-100/used/49731099" target="_blank">商品↗</a><a href="https://stockx.com/air-jordan-1-retro-high-co-japan-midnight-navy-suitcase" target="_blank">StockX↗</a></div>
+</div></div><div class="card" data-src="ヤフオク">
 <a class="thumb" href="https://auctions.yahoo.co.jp/jp/auction/d1236910008" target="_blank"><img src="https://auctions.c.yimg.jp/images.auctions.yahoo.co.jp/image/dr000/auc0207/user/432088c3c638eecae51036756ae18abfc0d13172011746ea8b83ba7a4212d262/i-img1024x1024-17839096788967d0w0qh35.jpg" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥19,648</span></a>
 <div class="body">
  <div class="price">¥25,680 <span class="chip">ヤフオク</span><span class="chip k">利益</span></div>
@@ -3531,13 +3538,6 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
  <div class="name">NIKE DUNK LOW RETRO_ダンク ロー レトロ/27cm/GRN// サイズ27cm [中古B]</div>
  <div class="meta"><span class="age" data-ts="1788184238"></span></div>
  <div class="links"><a href="https://www.2ndstreet.jp/goods/detail/goodsId/2229992619610/shopsId/30938" target="_blank">商品↗</a><a href="https://stockx.com/nike-dunk-low-varsity-green" target="_blank">StockX↗</a></div>
-</div></div><div class="card" data-src="Yフリマ">
-<a class="thumb" href="https://paypayfleamarket.yahoo.co.jp/item/z652916226" target="_blank"><img src="https://auctions.c.yimg.jp/images.auctions.yahoo.co.jp/image/dr000/auc0207/users/6e14a9319fafe51b8c6b427923b9beeeb187f4fa/i-img1200x1200-1785392830953k1bbqs.jpg" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥8,007</span></a>
-<div class="body">
- <div class="price">¥7,000 <span class="chip">Yフリマ</span><span class="chip k">利益</span></div>
- <div class="name">超希少　25cm us8 WMNS AIR JORDAN 1 HIGH OG NRG ALEALI MAY BV2613-600</div>
- <div class="meta"><span class="age" data-ts="1788183044"></span></div>
- <div class="links"><a href="https://paypayfleamarket.yahoo.co.jp/item/z652916226" target="_blank">商品↗</a><a href="https://stockx.com/air-jordan-1-retro-high-aleali-may-court-luxe-w" target="_blank">StockX↗</a></div>
 </div></div></div>
 <script>
 document.querySelectorAll(".filters button").forEach(b=>b.onclick=()=>{
@@ -3557,7 +3557,7 @@ tickAges();setInterval(tickAges,30000);
 
 const FEEDURL='https://raw.githubusercontent.com/trymyluck19-png/nesage-k7x2m9/main/feed.json';
 const FEEDAPI='https://api.github.com/repos/trymyluck19-png/nesage-k7x2m9/contents/feed.json?ref=main';
-let liveGen=1788491153;
+let liveGen=1788491568;
 const SHELLV=3;
 function cardEl(r){
  const d=document.createElement('div');d.className='card';d.dataset.src=r.src||'';
