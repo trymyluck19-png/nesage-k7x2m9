@@ -34,11 +34,18 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
 .links{margin-top:4px;font-size:11px} .links a{color:#7ab8ff;text-decoration:none}
 .hide{display:none}
 </style></head><body>
-<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 19:46(<span class="age" data-ts="1788605208"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
+<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 19:54(<span class="age" data-ts="1788605642"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
 <div class="nav"><span class="cur">フィード</span><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shiire.html">スキャナー</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shinchaku.html">楽天新着</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/rakuten.html">楽天値下げ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/bookoff.html">ブックオフ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/yahoo.html">ヤフオク値下げ</a></div>
 <div class="filters"><button class="on" data-s="*">すべて</button><button data-s="メルカリ">メルカリ</button><button data-s="ヤフオク">ヤフオク</button><button data-s="Yフリマ">Yフリマ</button><button data-s="楽天">楽天</button><button data-s="ブックオフ">ブックオフ</button><button data-s="トレファク">トレファク</button><button data-s="スニダン">スニダン</button><button data-s="セカスト">セカスト</button></div>
 </div>
-<div class="grid"><div class="card" data-src="スニダン">
+<div class="grid"><div class="card" data-src="メルカリ">
+<a class="thumb" href="https://jp.mercari.com/item/m24034177655" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m24034177655_1.jpg?1788055236" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥3,401</span></a>
+<div class="body">
+ <div class="price">¥17,555 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
+ <div class="name">新品未使用NIKE SB WHY SO SAD? US8.5</div>
+ <div class="meta"><span class="age" data-ts="1788605608"></span></div>
+ <div class="links"><a href="https://jp.mercari.com/item/m24034177655" target="_blank">商品↗</a><a href="https://stockx.com/nike-sb-dunk-low-pro-why-so-sad" target="_blank">StockX↗</a></div>
+</div></div><div class="card" data-src="スニダン">
 <a class="thumb" href="https://snkrdunk.com/products/CZ7928-100/used/49780679" target="_blank"><div class="noimg">画像なし</div><span class="badge good">+¥88,465</span></a>
 <div class="body">
  <div class="price">¥30,000 <span class="chip">スニダン</span><span class="chip k">利益</span></div>
@@ -780,13 +787,6 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
  <div class="name">NEWメンズNIKEサイズ：26.5cm￥9,900税込</div>
  <div class="meta"><span class="age" data-ts="1788589808"></span></div>
  <div class="links"><a href="https://www.trefac.jp/store/3067002212647195/c4351609/" target="_blank">商品↗</a><a href="https://stockx.com/nike-sb-dunk-low-burnt-sunrise" target="_blank">StockX↗</a></div>
-</div></div><div class="card" data-src="メルカリ">
-<a class="thumb" href="https://jp.mercari.com/item/m24034177655" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m24034177655_1.jpg?1788055236" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥4,078</span></a>
-<div class="body">
- <div class="price">¥17,000 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
- <div class="name">新品未使用NIKE SB WHY SO SAD? US8.5</div>
- <div class="meta"><span class="age" data-ts="1788589511"></span></div>
- <div class="links"><a href="https://jp.mercari.com/item/m24034177655" target="_blank">商品↗</a><a href="https://stockx.com/nike-sb-dunk-low-pro-why-so-sad" target="_blank">StockX↗</a></div>
 </div></div><div class="card" data-src="セカスト">
 <a class="thumb" href="https://www.2ndstreet.jp/goods/detail/goodsId/2241726319207/shopsId/31415" target="_blank"><img src="https://cdn2.2ndstreet.jp/img/pc/goods/224172/63/19207/1.jpg" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥6,280</span></a>
 <div class="body">
@@ -3557,7 +3557,7 @@ tickAges();setInterval(tickAges,30000);
 
 const FEEDURL='https://raw.githubusercontent.com/trymyluck19-png/nesage-k7x2m9/main/feed.json';
 const FEEDAPI='https://api.github.com/repos/trymyluck19-png/nesage-k7x2m9/contents/feed.json?ref=main';
-let liveGen=1788605208;
+let liveGen=1788605642;
 const SHELLV=3;
 function cardEl(r){
  const d=document.createElement('div');d.className='card';d.dataset.src=r.src||'';
