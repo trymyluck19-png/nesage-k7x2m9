@@ -34,11 +34,18 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
 .links{margin-top:4px;font-size:11px} .links a{color:#7ab8ff;text-decoration:none}
 .hide{display:none}
 </style></head><body>
-<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 16:19(<span class="age" data-ts="1788679174"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
+<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 16:26(<span class="age" data-ts="1788679572"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
 <div class="nav"><span class="cur">フィード</span><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shiire.html">スキャナー</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shinchaku.html">楽天新着</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/rakuten.html">楽天値下げ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/bookoff.html">ブックオフ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/yahoo.html">ヤフオク値下げ</a></div>
 <div class="filters"><button class="on" data-s="*">すべて</button><button data-s="メルカリ">メルカリ</button><button data-s="ヤフオク">ヤフオク</button><button data-s="Yフリマ">Yフリマ</button><button data-s="楽天">楽天</button><button data-s="ブックオフ">ブックオフ</button><button data-s="トレファク">トレファク</button><button data-s="スニダン">スニダン</button><button data-s="セカスト">セカスト</button></div>
 </div>
 <div class="grid"><div class="card" data-src="メルカリ">
+<a class="thumb" href="https://jp.mercari.com/item/m67368009703" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m67368009703_1.jpg?1788364792" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥108</span></a>
+<div class="body">
+ <div class="price">¥18,230 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
+ <div class="name">正規　未使用 ナイキ エアジョーダン11 レトロ ウィンライク96 28cm</div>
+ <div class="meta"><span class="age" data-ts="1788679550"></span></div>
+ <div class="links"><a href="https://jp.mercari.com/item/m67368009703" target="_blank">商品↗</a><a href="https://stockx.com/air-jordan-11-retro-win-like-96" target="_blank">StockX↗</a></div>
+</div></div><div class="card" data-src="メルカリ">
 <a class="thumb" href="https://jp.mercari.com/item/m68549828670" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m68549828670_1.jpg?1788674376" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥5,426</span></a>
 <div class="body">
  <div class="price">¥6,999 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
@@ -3300,13 +3307,6 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
  <div class="name">ナイキ ジョーダン フライト コート オリーブ 27.5cm 【新品未使用】</div>
  <div class="meta"><span class="age" data-ts="1788388657"></span></div>
  <div class="links"><a href="https://jp.mercari.com/item/m16689044583" target="_blank">商品↗</a><a href="https://stockx.com/air-jordan-flight-court-medium-olive-baroque-brown" target="_blank">StockX↗</a></div>
-</div></div><div class="card" data-src="メルカリ">
-<a class="thumb" href="https://jp.mercari.com/item/m95736693469" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m95736693469_1.jpg?1762121284" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥2,549</span></a>
-<div class="body">
- <div class="price">¥14,600 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
- <div class="name">NIKE WMNS AIR JORDAN 1 MID GREEN グリーン 緑</div>
- <div class="meta"><span class="age" data-ts="1788373699"></span></div>
- <div class="links"><a href="https://jp.mercari.com/item/m95736693469" target="_blank">商品↗</a><a href="https://stockx.com/air-jordan-1-mid-oxidised-green-womens" target="_blank">StockX↗</a></div>
 </div></div><div class="card" data-src="セカスト">
 <a class="thumb" href="https://www.2ndstreet.jp/goods/detail/goodsId/2344300951470/shopsId/31616" target="_blank"><img src="https://cdn2.2ndstreet.jp/img/pc/goods/234430/09/51470/1.jpg" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥2,414</span></a>
 <div class="body">
@@ -3557,7 +3557,7 @@ tickAges();setInterval(tickAges,30000);
 
 const FEEDURL='https://raw.githubusercontent.com/trymyluck19-png/nesage-k7x2m9/main/feed.json';
 const FEEDAPI='https://api.github.com/repos/trymyluck19-png/nesage-k7x2m9/contents/feed.json?ref=main';
-let liveGen=1788679174;
+let liveGen=1788679572;
 const SHELLV=3;
 function cardEl(r){
  const d=document.createElement('div');d.className='card';d.dataset.src=r.src||'';
