@@ -34,11 +34,18 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
 .links{margin-top:4px;font-size:11px} .links a{color:#7ab8ff;text-decoration:none}
 .hide{display:none}
 </style></head><body>
-<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 02:31(<span class="age" data-ts="1788715908"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
+<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 02:37(<span class="age" data-ts="1788716266"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
 <div class="nav"><span class="cur">フィード</span><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shiire.html">スキャナー</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shinchaku.html">楽天新着</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/rakuten.html">楽天値下げ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/bookoff.html">ブックオフ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/yahoo.html">ヤフオク値下げ</a></div>
 <div class="filters"><button class="on" data-s="*">すべて</button><button data-s="メルカリ">メルカリ</button><button data-s="ヤフオク">ヤフオク</button><button data-s="Yフリマ">Yフリマ</button><button data-s="楽天">楽天</button><button data-s="ブックオフ">ブックオフ</button><button data-s="トレファク">トレファク</button><button data-s="スニダン">スニダン</button><button data-s="セカスト">セカスト</button></div>
 </div>
-<div class="grid"><div class="card" data-src="メルカリ">
+<div class="grid"><div class="card" data-src="ヤフオク">
+<a class="thumb" href="https://auctions.yahoo.co.jp/jp/auction/w1243543696" target="_blank"><img src="https://auctions.c.yimg.jp/images.auctions.yahoo.co.jp/image/dr000/auc0209/user/2f07b3595be614bc3a9f89f7deaaf51c67e0969fff4cc937321ee6231318da90/i-img1200x1051-17887156464469ciops611960.jpg" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥302,624</span></a>
+<div class="body">
+ <div class="price">¥17,500 <span class="chip">ヤフオク</span><span class="chip k">利益</span></div>
+ <div class="name">NIKE AIR JORDAN 4 RETRO RARE ナイキ エアジョーダン 4 レトロ レアエア 27.5cm</div>
+ <div class="meta"><span class="age" data-ts="1788716260"></span></div>
+ <div class="links"><a href="https://auctions.yahoo.co.jp/jp/auction/w1243543696" target="_blank">商品↗</a><a href="https://stockx.com/jordan-4-retro-black-laser" target="_blank">StockX↗</a></div>
+</div></div><div class="card" data-src="メルカリ">
 <a class="thumb" href="https://jp.mercari.com/item/m54985902747" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m54985902747_1.jpg?1780237507" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥6,534</span></a>
 <div class="body">
  <div class="price">¥9,020 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
@@ -3531,13 +3538,6 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
  <div class="name">NIKE AIR JORDAN 11 RETRO_エア ジョーダン 11 レトロ/26cm/RED サイズ26cm [中古B]</div>
  <div class="meta"><span class="age" data-ts="1788336586"></span></div>
  <div class="links"><a href="https://www.2ndstreet.jp/goods/detail/goodsId/2347901621353/shopsId/31932" target="_blank">商品↗</a><a href="https://stockx.com/air-jordan-11-retro-cherry-2022" target="_blank">StockX↗</a></div>
-</div></div><div class="card" data-src="スニダン">
-<a class="thumb" href="https://snkrdunk.com/products/HQ8487-001/used/49674947" target="_blank"><div class="noimg">画像なし</div><span class="badge good">+¥9,031</span></a>
-<div class="body">
- <div class="price">¥31,000 <span class="chip">スニダン</span><span class="chip k">利益</span></div>
- <div class="name">Supreme × Nike SB Dunk Low &quot;Black&quot; (25FW Week2)</div>
- <div class="meta"><span class="age" data-ts="1788335307"></span></div>
- <div class="links"><a href="https://snkrdunk.com/products/HQ8487-001/used/49674947" target="_blank">商品↗</a><a href="https://stockx.com/nike-sb-dunk-low-supreme-94-black" target="_blank">StockX↗</a></div>
 </div></div></div>
 <script>
 document.querySelectorAll(".filters button").forEach(b=>b.onclick=()=>{
@@ -3557,7 +3557,7 @@ tickAges();setInterval(tickAges,30000);
 
 const FEEDURL='https://raw.githubusercontent.com/trymyluck19-png/nesage-k7x2m9/main/feed.json';
 const FEEDAPI='https://api.github.com/repos/trymyluck19-png/nesage-k7x2m9/contents/feed.json?ref=main';
-let liveGen=1788715908;
+let liveGen=1788716266;
 const SHELLV=3;
 function cardEl(r){
  const d=document.createElement('div');d.className='card';d.dataset.src=r.src||'';
