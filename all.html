@@ -34,11 +34,18 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
 .links{margin-top:4px;font-size:11px} .links a{color:#7ab8ff;text-decoration:none}
 .hide{display:none}
 </style></head><body>
-<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 11:08(<span class="age" data-ts="1789610931"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
+<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 11:13(<span class="age" data-ts="1789611190"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
 <div class="nav"><span class="cur">フィード</span><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shiire.html">スキャナー</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shinchaku.html">楽天新着</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/rakuten.html">楽天値下げ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/bookoff.html">ブックオフ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/yahoo.html">ヤフオク値下げ</a></div>
 <div class="filters"><button class="on" data-s="*">すべて</button><button data-s="メルカリ">メルカリ</button><button data-s="ヤフオク">ヤフオク</button><button data-s="Yフリマ">Yフリマ</button><button data-s="楽天">楽天</button><button data-s="ブックオフ">ブックオフ</button><button data-s="トレファク">トレファク</button><button data-s="スニダン">スニダン</button><button data-s="セカスト">セカスト</button></div>
 </div>
-<div class="grid"><div class="card" data-src="楽天">
+<div class="grid"><div class="card" data-src="メルカリ">
+<a class="thumb" href="https://jp.mercari.com/item/m62645288585" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m62645288585_1.jpg?1784709558" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥6,853</span></a>
+<div class="body">
+ <div class="price">¥8,800 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
+ <div class="name">❤️新品未使用❤️NIKE AIR JORDAN 11 RETRO LOWスニーカー</div>
+ <div class="meta"><span class="age" data-ts="1789611184"></span></div>
+ <div class="links"><a href="https://jp.mercari.com/item/m62645288585" target="_blank">商品↗</a><a href="https://stockx.com/air-jordan-11-retro-low-tour-yellow-snakeskin-w" target="_blank">StockX↗</a></div>
+</div></div><div class="card" data-src="楽天">
 <a class="thumb" href="https://item.rakuten.co.jp/mandai/2100020000826587/?rafcid=wsc_i_is_41f96240-b4f8-4b27-8761-601eb782b562" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mandai/cabinet/min20260917/2100020000826587-1.jpg" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥9,542</span></a>
 <div class="body">
  <div class="price">¥95,700 <span class="chip">楽天</span><span class="chip k">利益</span></div>
@@ -3426,13 +3433,6 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
  <div class="name">ナイキ ×OFF-WHITE AIR JORDAN 2 RETRO LOW SP DJ4375-004 エアジョーダン2 レトロ ローカットスニーカー US10</div>
  <div class="meta"><span class="age" data-ts="1789348358"></span></div>
  <div class="links"><a href="https://auctions.yahoo.co.jp/jp/auction/1243742957" target="_blank">商品↗</a><a href="https://stockx.com/air-jordan-2-retro-low-sp-off-white-black-blue" target="_blank">StockX↗</a></div>
-</div></div><div class="card" data-src="メルカリ">
-<a class="thumb" href="https://jp.mercari.com/item/m92546174278" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m92546174278_1.jpg?1785908856" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥527</span></a>
-<div class="body">
- <div class="price">¥11,000 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
- <div class="name">NIKE AIR JORDAN 1 RETRO LOW OG Howard 29</div>
- <div class="meta"><span class="age" data-ts="1789344676"></span></div>
- <div class="links"><a href="https://jp.mercari.com/item/m92546174278" target="_blank">商品↗</a><a href="https://stockx.com/air-jordan-1-retro-low-og-howard-university" target="_blank">StockX↗</a></div>
 </div></div><div class="card" data-src="スニダン">
 <a class="thumb" href="https://snkrdunk.com/products/378037-001/used/50041200" target="_blank"><div class="noimg">画像なし</div><span class="badge good">+¥11,560</span></a>
 <div class="body">
@@ -3557,7 +3557,7 @@ tickAges();setInterval(tickAges,30000);
 
 const FEEDURL='https://raw.githubusercontent.com/trymyluck19-png/nesage-k7x2m9/main/feed.json';
 const FEEDAPI='https://api.github.com/repos/trymyluck19-png/nesage-k7x2m9/contents/feed.json?ref=main';
-let liveGen=1789610931;
+let liveGen=1789611190;
 const SHELLV=3;
 function cardEl(r){
  const d=document.createElement('div');d.className='card';d.dataset.src=r.src||'';
