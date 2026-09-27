@@ -34,11 +34,18 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
 .links{margin-top:4px;font-size:11px} .links a{color:#7ab8ff;text-decoration:none}
 .hide{display:none}
 </style></head><body>
-<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 17:53(<span class="age" data-ts="1790499228"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
+<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 17:55(<span class="age" data-ts="1790499312"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
 <div class="nav"><span class="cur">フィード</span><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shiire.html">スキャナー</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shinchaku.html">楽天新着</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/rakuten.html">楽天値下げ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/bookoff.html">ブックオフ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/yahoo.html">ヤフオク値下げ</a></div>
 <div class="filters"><button class="on" data-s="*">すべて</button><button data-s="メルカリ">メルカリ</button><button data-s="ヤフオク">ヤフオク</button><button data-s="Yフリマ">Yフリマ</button><button data-s="楽天">楽天</button><button data-s="ブックオフ">ブックオフ</button><button data-s="トレファク">トレファク</button><button data-s="スニダン">スニダン</button><button data-s="セカスト">セカスト</button></div>
 </div>
-<div class="grid"><div class="card" data-src="セカスト">
+<div class="grid"><div class="card" data-src="メルカリ">
+<a class="thumb" href="https://jp.mercari.com/item/m99619882760" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m99619882760_1.jpg?1789961414" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥621</span></a>
+<div class="body">
+ <div class="price">¥5,500 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
+ <div class="name">ナイキ エアジョーダン 1 ズーム CMFT 2 バレンタインデー</div>
+ <div class="meta"><span class="age" data-ts="1790499278"></span></div>
+ <div class="links"><a href="https://jp.mercari.com/item/m99619882760" target="_blank">商品↗</a><a href="https://stockx.com/air-jordan-1-high-zoom-air-cmft-2-valentines-day-2023-w" target="_blank">StockX↗</a></div>
+</div></div><div class="card" data-src="セカスト">
 <a class="thumb" href="https://www.2ndstreet.jp/goods/detail/goodsId/2329467187283/shopsId/30927" target="_blank"><img src="https://cdn2.2ndstreet.jp/img/pc/goods/232946/71/87283/1.jpg" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥45,468</span></a>
 <div class="body">
  <div class="price">¥8,690 <span class="chip">セカスト</span><span class="chip k">利益</span></div>
@@ -2622,13 +2629,6 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
  <div class="meta"><span class="age" data-ts="1790344415"></span></div>
  <div class="links"><a href="https://www.2ndstreet.jp/goods/detail/goodsId/2338207044458/shopsId/31241" target="_blank">商品↗</a><a href="https://stockx.com/air-jordan-3-retro-black-cement-2018" target="_blank">StockX↗</a></div>
 </div></div><div class="card" data-src="メルカリ">
-<a class="thumb" href="https://jp.mercari.com/item/m99619882760" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m99619882760_1.jpg?1789961414" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥108</span></a>
-<div class="body">
- <div class="price">¥6,000 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
- <div class="name">ナイキ エアジョーダン 1 ズーム CMFT 2 バレンタインデー</div>
- <div class="meta"><span class="age" data-ts="1790343791"></span></div>
- <div class="links"><a href="https://jp.mercari.com/item/m99619882760" target="_blank">商品↗</a><a href="https://stockx.com/air-jordan-1-high-zoom-air-cmft-2-valentines-day-2023-w" target="_blank">StockX↗</a></div>
-</div></div><div class="card" data-src="メルカリ">
 <a class="thumb" href="https://jp.mercari.com/item/m79693644943" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m79693644943_1.jpg?1750084811" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥7,843</span></a>
 <div class="body">
  <div class="price">¥52,999 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
@@ -3557,7 +3557,7 @@ tickAges();setInterval(tickAges,30000);
 
 const FEEDURL='https://raw.githubusercontent.com/trymyluck19-png/nesage-k7x2m9/main/feed.json';
 const FEEDAPI='https://api.github.com/repos/trymyluck19-png/nesage-k7x2m9/contents/feed.json?ref=main';
-let liveGen=1790499228;
+let liveGen=1790499312;
 const SHELLV=6;
 function cardEl(r){
  const d=document.createElement('div');d.className='card';d.dataset.src=r.src||'';
