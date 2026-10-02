@@ -34,11 +34,18 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
 .links{margin-top:4px;font-size:11px} .links a{color:#7ab8ff;text-decoration:none}
 .hide{display:none}
 </style></head><body>
-<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 01:49(<span class="age" data-ts="1790959799"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
+<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 01:57(<span class="age" data-ts="1790960275"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
 <div class="nav"><span class="cur">フィード</span><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shiire.html">スキャナー</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shinchaku.html">楽天新着</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/rakuten.html">楽天値下げ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/bookoff.html">ブックオフ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/yahoo.html">ヤフオク値下げ</a></div>
 <div class="filters"><button class="on" data-s="*">すべて</button><button data-s="メルカリ">メルカリ</button><button data-s="ヤフオク">ヤフオク</button><button data-s="Yフリマ">Yフリマ</button><button data-s="楽天">楽天</button><button data-s="ブックオフ">ブックオフ</button><button data-s="トレファク">トレファク</button><button data-s="スニダン">スニダン</button><button data-s="セカスト">セカスト</button></div>
 </div>
-<div class="grid"><div class="card" data-src="Yフリマ">
+<div class="grid"><div class="card" data-src="メルカリ">
+<a class="thumb" href="https://jp.mercari.com/item/m93097524543" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m93097524543_1.jpg?1774268175" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥15,780</span></a>
+<div class="body">
+ <div class="price">¥25,000 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
+ <div class="name">NIKE AIR FOAMPOSITE PRO</div>
+ <div class="meta"><span class="age" data-ts="1790960258"></span></div>
+ <div class="links"><a href="https://jp.mercari.com/item/m93097524543" target="_blank">商品↗</a><a href="https://stockx.com/foamposite-pro-bright-crimson" target="_blank">StockX↗</a></div>
+</div></div><div class="card" data-src="Yフリマ">
 <a class="thumb" href="https://paypayfleamarket.yahoo.co.jp/item/z550083668" target="_blank"><img src="https://auctions.c.yimg.jp/images.auctions.yahoo.co.jp/image/dr000/auc0201/users/227068b10146027e4920ca98db148c8c1e9bb0cf/i-img1120x1200-1769564964154xncjrm.jpg" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥6,560</span></a>
 <div class="body">
  <div class="price">¥6,700 <span class="chip">Yフリマ</span><span class="chip k">利益</span></div>
@@ -59,13 +66,6 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
  <div class="name">未使用 NIKE ナイキ 27cm AIR JORDAN 2 RETRO DR8884-001 ブラックセメント エアジョーダン2レトロ 2023年製 ブラック</div>
  <div class="meta"><span class="age" data-ts="1790958539"></span></div>
  <div class="links"><a href="https://auctions.yahoo.co.jp/jp/auction/j1246815757" target="_blank">商品↗</a><a href="https://stockx.com/air-jordan-2-retro-black-cement" target="_blank">StockX↗</a></div>
-</div></div><div class="card" data-src="メルカリ">
-<a class="thumb" href="https://jp.mercari.com/item/m93097524543" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m93097524543_1.jpg?1774268175" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥15,780</span></a>
-<div class="body">
- <div class="price">¥25,000 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
- <div class="name">NIKE AIR FOAMPOSITE PRO</div>
- <div class="meta"><span class="age" data-ts="1790956952"></span></div>
- <div class="links"><a href="https://jp.mercari.com/item/m93097524543" target="_blank">商品↗</a><a href="https://stockx.com/foamposite-pro-bright-crimson" target="_blank">StockX↗</a></div>
 </div></div><div class="card" data-src="メルカリ">
 <a class="thumb" href="https://jp.mercari.com/item/m83814589266" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m83814589266_1.jpg?1788658933" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥971</span></a>
 <div class="body">
@@ -3557,7 +3557,7 @@ tickAges();setInterval(tickAges,30000);
 
 const FEEDURL='https://raw.githubusercontent.com/trymyluck19-png/nesage-k7x2m9/main/feed.json';
 const FEEDAPI='https://api.github.com/repos/trymyluck19-png/nesage-k7x2m9/contents/feed.json?ref=main';
-let liveGen=1790959799;
+let liveGen=1790960275;
 const SHELLV=6;
 function cardEl(r){
  const d=document.createElement('div');d.className='card';d.dataset.src=r.src||'';
