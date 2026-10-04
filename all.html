@@ -34,11 +34,18 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
 .links{margin-top:4px;font-size:11px} .links a{color:#7ab8ff;text-decoration:none}
 .hide{display:none}
 </style></head><body>
-<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 16:55(<span class="age" data-ts="1791100520"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
+<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 17:02(<span class="age" data-ts="1791100923"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
 <div class="nav"><span class="cur">フィード</span><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shiire.html">スキャナー</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shinchaku.html">楽天新着</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/rakuten.html">楽天値下げ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/bookoff.html">ブックオフ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/yahoo.html">ヤフオク値下げ</a></div>
 <div class="filters"><button class="on" data-s="*">すべて</button><button data-s="メルカリ">メルカリ</button><button data-s="ヤフオク">ヤフオク</button><button data-s="Yフリマ">Yフリマ</button><button data-s="楽天">楽天</button><button data-s="ブックオフ">ブックオフ</button><button data-s="トレファク">トレファク</button><button data-s="スニダン">スニダン</button><button data-s="セカスト">セカスト</button></div>
 </div>
-<div class="grid"><div class="card" data-src="メルカリ">
+<div class="grid"><div class="card" data-src="Yフリマ">
+<a class="thumb" href="https://paypayfleamarket.yahoo.co.jp/item/z673685044" target="_blank"><img src="https://auctions.c.yimg.jp/images.auctions.yahoo.co.jp/image/dr000/auc0208/users/db5ff10613ecf9da6a2f4aa0ed91668ef20e2f11/i-img1200x812-17880675690387y0swe.jpg" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥8,413</span></a>
+<div class="body">
+ <div class="price">¥63,000 <span class="chip">Yフリマ</span><span class="chip k">利益</span></div>
+ <div class="name">NIKE DUNK LOW CL DENIM US8.5 26.5㎝</div>
+ <div class="meta"><span class="age" data-ts="1791100907"></span></div>
+ <div class="links"><a href="https://paypayfleamarket.yahoo.co.jp/item/z673685044" target="_blank">商品↗</a><a href="https://stockx.com/nike-dunk-low-cl-denim" target="_blank">StockX↗</a></div>
+</div></div><div class="card" data-src="メルカリ">
 <a class="thumb" href="https://jp.mercari.com/item/m32363498090" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m32363498090_1.jpg?1791083252" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥31,832</span></a>
 <div class="body">
  <div class="price">¥52,000 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
@@ -3531,13 +3538,6 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
  <div class="name">adidas アディダス Handball Spezial Germany IH6529 ハンドボールスペツィアル ジャーマニー ローカットスニーカー US8.</div>
  <div class="meta"><span class="age" data-ts="1790693800"></span></div>
  <div class="links"><a href="https://auctions.yahoo.co.jp/jp/auction/f1245956895" target="_blank">商品↗</a><a href="https://stockx.com/adidas-handball-spezial-made-in-germany-black-off-white" target="_blank">StockX↗</a></div>
-</div></div><div class="card" data-src="Yフリマ">
-<a class="thumb" href="https://paypayfleamarket.yahoo.co.jp/item/f354214806" target="_blank"><img src="https://auctions.c.yimg.jp/images.auctions.yahoo.co.jp/image/dr000/auc0506/users/182bfd0650e09b904b46f1cfc3d919348b320d7e/i-img640x854-1560506528snd5tw594829.jpg" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥16,302</span></a>
-<div class="body">
- <div class="price">¥31,900 <span class="chip">Yフリマ</span><span class="chip k">利益</span></div>
- <div class="name">1996s NIKE AIR JORDAN -11 Size 7 (25 cm)</div>
- <div class="meta"><span class="age" data-ts="1790681957"></span></div>
- <div class="links"><a href="https://paypayfleamarket.yahoo.co.jp/item/f354214806" target="_blank">商品↗</a><a href="https://stockx.com/jordan-11-og-playoffs-1995" target="_blank">StockX↗</a></div>
 </div></div></div>
 <script>
 document.querySelectorAll(".filters button").forEach(b=>b.onclick=()=>{
@@ -3557,7 +3557,7 @@ tickAges();setInterval(tickAges,30000);
 
 const FEEDURL='https://raw.githubusercontent.com/trymyluck19-png/nesage-k7x2m9/main/feed.json';
 const FEEDAPI='https://api.github.com/repos/trymyluck19-png/nesage-k7x2m9/contents/feed.json?ref=main';
-let liveGen=1791100520;
+let liveGen=1791100923;
 const SHELLV=6;
 function cardEl(r){
  const d=document.createElement('div');d.className='card';d.dataset.src=r.src||'';
