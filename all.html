@@ -34,11 +34,18 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
 .links{margin-top:4px;font-size:11px} .links a{color:#7ab8ff;text-decoration:none}
 .hide{display:none}
 </style></head><body>
-<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 06:09(<span class="age" data-ts="1791407392"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
+<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 06:16(<span class="age" data-ts="1791407776"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
 <div class="nav"><span class="cur">フィード</span><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shiire.html">スキャナー</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shinchaku.html">楽天新着</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/rakuten.html">楽天値下げ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/bookoff.html">ブックオフ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/yahoo.html">ヤフオク値下げ</a></div>
 <div class="filters"><button class="on" data-s="*">すべて</button><button data-s="メルカリ">メルカリ</button><button data-s="ヤフオク">ヤフオク</button><button data-s="Yフリマ">Yフリマ</button><button data-s="楽天">楽天</button><button data-s="ブックオフ">ブックオフ</button><button data-s="トレファク">トレファク</button><button data-s="スニダン">スニダン</button><button data-s="セカスト">セカスト</button></div>
 </div>
 <div class="grid"><div class="card" data-src="メルカリ">
+<a class="thumb" href="https://jp.mercari.com/item/m37497713973" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m37497713973_1.jpg?1791381407" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥8,661</span></a>
+<div class="body">
+ <div class="price">¥5,000 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
+ <div class="name">ナイキ ダンク HIGH LX ウィメンズシューズ</div>
+ <div class="meta"><span class="age" data-ts="1791407764"></span></div>
+ <div class="links"><a href="https://jp.mercari.com/item/m37497713973" target="_blank">商品↗</a><a href="https://stockx.com/nike-dunk-high-see-through-pistachio-midnight-navy-w" target="_blank">StockX↗</a></div>
+</div></div><div class="card" data-src="メルカリ">
 <a class="thumb" href="https://jp.mercari.com/item/m28907799781" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m28907799781_1.jpg?1761827557" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥102,182</span></a>
 <div class="body">
  <div class="price">¥88,500 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
@@ -423,13 +430,6 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
  <div class="name">黒タグ付新品 鉄拳8 Nike Air Foamposite 29.5cm</div>
  <div class="meta"><span class="age" data-ts="1791383826"></span></div>
  <div class="links"><a href="https://jp.mercari.com/item/m39670321617" target="_blank">商品↗</a><a href="https://stockx.com/nike-air-foamposite-one-tekken-8-jin-kazama" target="_blank">StockX↗</a></div>
-</div></div><div class="card" data-src="メルカリ">
-<a class="thumb" href="https://jp.mercari.com/item/m37497713973" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m37497713973_1.jpg?1791381407" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥8,661</span></a>
-<div class="body">
- <div class="price">¥5,000 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
- <div class="name">ナイキ ダンク HIGH LX ウィメンズシューズ</div>
- <div class="meta"><span class="age" data-ts="1791381731"></span></div>
- <div class="links"><a href="https://jp.mercari.com/item/m37497713973" target="_blank">商品↗</a><a href="https://stockx.com/nike-dunk-high-see-through-pistachio-midnight-navy-w" target="_blank">StockX↗</a></div>
 </div></div><div class="card" data-src="セカスト">
 <a class="thumb" href="https://www.2ndstreet.jp/goods/detail/goodsId/2335335094997/shopsId/31096" target="_blank"><img src="https://cdn2.2ndstreet.jp/img/pc/goods/233533/50/94997/1.jpg" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥40,513</span></a>
 <div class="body">
@@ -3557,7 +3557,7 @@ tickAges();setInterval(tickAges,30000);
 
 const FEEDURL='https://raw.githubusercontent.com/trymyluck19-png/nesage-k7x2m9/main/feed.json';
 const FEEDAPI='https://api.github.com/repos/trymyluck19-png/nesage-k7x2m9/contents/feed.json?ref=main';
-let liveGen=1791407392;
+let liveGen=1791407776;
 const SHELLV=6;
 function cardEl(r){
  const d=document.createElement('div');d.className='card';d.dataset.src=r.src||'';
