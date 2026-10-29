@@ -34,11 +34,18 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
 .links{margin-top:4px;font-size:11px} .links a{color:#7ab8ff;text-decoration:none}
 .hide{display:none}
 </style></head><body>
-<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 10:07(<span class="age" data-ts="1793236027"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
+<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 10:14(<span class="age" data-ts="1793236443"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
 <div class="nav"><span class="cur">フィード</span><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shiire.html">スキャナー</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shinchaku.html">楽天新着</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/rakuten.html">楽天値下げ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/bookoff.html">ブックオフ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/yahoo.html">ヤフオク値下げ</a></div>
 <div class="filters"><button class="on" data-s="*">すべて</button><button data-s="メルカリ">メルカリ</button><button data-s="ヤフオク">ヤフオク</button><button data-s="Yフリマ">Yフリマ</button><button data-s="楽天">楽天</button><button data-s="ブックオフ">ブックオフ</button><button data-s="トレファク">トレファク</button><button data-s="スニダン">スニダン</button><button data-s="セカスト">セカスト</button><button data-s="オフモール">オフモール</button><button data-s="ドンサガ">ドンサガ</button><button data-s="KIND">KIND</button></div>
 </div>
 <div class="grid"><div class="card" data-src="メルカリ">
+<a class="thumb" href="https://jp.mercari.com/item/m72129699229" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m72129699229_1.jpg?1792895462" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥9,010</span></a>
+<div class="body">
+ <div class="price">¥13,000 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
+ <div class="name">Off-White × Nike Women&#x27;s Waffle Racer</div>
+ <div class="meta"><span class="age" data-ts="1793236435"></span></div>
+ <div class="links"><a href="https://jp.mercari.com/item/m72129699229" target="_blank">商品↗</a><a href="https://stockx.com/nike-waffle-racer-off-white-black-w" target="_blank">StockX↗</a></div>
+</div></div><div class="card" data-src="メルカリ">
 <a class="thumb" href="https://jp.mercari.com/item/m45716662409" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m45716662409_1.jpg?1792571856" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥26,192</span></a>
 <div class="body">
  <div class="price">¥24,999 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
@@ -66,13 +73,6 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
  <div class="name">NIKE/ナイキ AIR JORDAN スニーカー 304775-029 US9.5(27.5cm) ブラック/レッド/パープル ハイカット シューズ メンズ[</div>
  <div class="meta"><span class="age" data-ts="1793234710"></span></div>
  <div class="links"><a href="https://jp.mercari.com/shops/product/2JYYp4uUGFR6REjDheH2s9" target="_blank">商品↗</a><a href="https://stockx.com/jordan-7-retro-marvin-the-martian" target="_blank">StockX↗</a></div>
-</div></div><div class="card" data-src="メルカリ">
-<a class="thumb" href="https://jp.mercari.com/item/m72129699229" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m72129699229_1.jpg?1792895462" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥9,010</span></a>
-<div class="body">
- <div class="price">¥13,000 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
- <div class="name">Off-White × Nike Women&#x27;s Waffle Racer</div>
- <div class="meta"><span class="age" data-ts="1793234710"></span></div>
- <div class="links"><a href="https://jp.mercari.com/item/m72129699229" target="_blank">商品↗</a><a href="https://stockx.com/nike-waffle-racer-off-white-black-w" target="_blank">StockX↗</a></div>
 </div></div><div class="card" data-src="メルカリ">
 <a class="thumb" href="https://jp.mercari.com/item/m39219340586" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m39219340586_1.jpg?1789611513" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥212</span></a>
 <div class="body">
@@ -3557,7 +3557,7 @@ tickAges();setInterval(tickAges,30000);
 
 const FEEDURL='https://raw.githubusercontent.com/trymyluck19-png/nesage-k7x2m9/main/feed.json';
 const FEEDAPI='https://api.github.com/repos/trymyluck19-png/nesage-k7x2m9/contents/feed.json?ref=main';
-let liveGen=1793236027;
+let liveGen=1793236443;
 const SHELLV=7;
 function cardEl(r){
  const d=document.createElement('div');d.className='card';d.dataset.src=r.src||'';
