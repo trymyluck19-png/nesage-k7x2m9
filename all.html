@@ -34,11 +34,18 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
 .links{margin-top:4px;font-size:11px} .links a{color:#7ab8ff;text-decoration:none}
 .hide{display:none}
 </style></head><body>
-<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 18:01(<span class="age" data-ts="1793350903"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
+<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 18:08(<span class="age" data-ts="1793351303"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
 <div class="nav"><span class="cur">フィード</span><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shiire.html">スキャナー</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shinchaku.html">楽天新着</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/rakuten.html">楽天値下げ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/bookoff.html">ブックオフ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/yahoo.html">ヤフオク値下げ</a></div>
 <div class="filters"><button class="on" data-s="*">すべて</button><button data-s="メルカリ">メルカリ</button><button data-s="ヤフオク">ヤフオク</button><button data-s="Yフリマ">Yフリマ</button><button data-s="楽天">楽天</button><button data-s="ブックオフ">ブックオフ</button><button data-s="トレファク">トレファク</button><button data-s="スニダン">スニダン</button><button data-s="セカスト">セカスト</button><button data-s="オフモール">オフモール</button><button data-s="ドンサガ">ドンサガ</button><button data-s="KIND">KIND</button></div>
 </div>
-<div class="grid"><div class="card" data-src="トレファク">
+<div class="grid"><div class="card" data-src="メルカリ">
+<a class="thumb" href="https://jp.mercari.com/shops/product/2JTTRaAvapWaaPCWTXe5fW" target="_blank"><img src="https://assets.mercari-shops-static.com/-/large/plain/2JYrUH9L5vUNPqWyDkqa5a.jpg@webp" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥7,823</span></a>
+<div class="body">
+ <div class="price">¥7,000 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
+ <div class="name">ナイキ NIKE AIR JORDAN 1 LOW SE CNY SAIL スニーカー シューズ 23cm ワインレッド 白 ホワイト ローカットスニーカー 刺</div>
+ <div class="meta"><span class="age" data-ts="1793351293"></span></div>
+ <div class="links"><a href="https://jp.mercari.com/shops/product/2JTTRaAvapWaaPCWTXe5fW" target="_blank">商品↗</a><a href="https://stockx.com/air-jordan-1-low-year-of-the-dragon-2024-womens" target="_blank">StockX↗</a></div>
+</div></div><div class="card" data-src="トレファク">
 <a class="thumb" href="https://www.trefac.jp/store/3083001692976315/c3732897/" target="_blank"><img src="https://www.trefac.jp/image/item/3083001692976315/w384/3083001692976315_01_6867w.jpeg" loading="lazy" referrerpolicy="no-referrer"></a>
 <div class="body">
  <div class="price">¥9,900 <span class="chip">トレファク</span><span class="chip k">新着</span></div>
@@ -3531,13 +3538,6 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
  <div class="name">ADIDAS KAWASAKI NINJA 27.5cm</div>
  <div class="meta"><span class="age" data-ts="1793178829"></span></div>
  <div class="links"><a href="https://netmall.hardoff.co.jp/product/6653837/" target="_blank">商品↗</a><a href="https://stockx.com/adidas-zx-8000-kawasaki-ninja" target="_blank">StockX↗</a></div>
-</div></div><div class="card" data-src="オフモール">
-<a class="thumb" href="https://netmall.hardoff.co.jp/product/6653716/" target="_blank"><img src="https://p1-d9ebd2ee.imageflux.jp/c!/w=1280,h=1280,a=0,u=1,q=75/203226/2026_10_28_17_41_53.jpg" loading="lazy" referrerpolicy="no-referrer"></a>
-<div class="body">
- <div class="price">[B] ¥4,400 <span class="chip">オフモール</span><span class="chip k">新着</span></div>
- <div class="name">NIKE メンズ スニーカー 25</div>
- <div class="meta"><span class="age" data-ts="1793178829"></span></div>
- <div class="links"><a href="https://netmall.hardoff.co.jp/product/6653716/" target="_blank">商品↗</a><a href="https://stockx.com/search?s=DC3729-003" target="_blank">StockX↗</a></div>
 </div></div></div>
 <script>
 document.querySelectorAll(".filters button").forEach(b=>b.onclick=()=>{
@@ -3557,7 +3557,7 @@ tickAges();setInterval(tickAges,30000);
 
 const FEEDURL='https://raw.githubusercontent.com/trymyluck19-png/nesage-k7x2m9/main/feed.json';
 const FEEDAPI='https://api.github.com/repos/trymyluck19-png/nesage-k7x2m9/contents/feed.json?ref=main';
-let liveGen=1793350903;
+let liveGen=1793351303;
 const SHELLV=7;
 function cardEl(r){
  const d=document.createElement('div');d.className='card';d.dataset.src=r.src||'';
