@@ -34,11 +34,18 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
 .links{margin-top:4px;font-size:11px} .links a{color:#7ab8ff;text-decoration:none}
 .hide{display:none}
 </style></head><body>
-<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 22:57(<span class="age" data-ts="1793368666"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
+<div class="head"><h1>仕入フィード</h1><span class="sub">500件 / 生成 23:01(<span class="age" data-ts="1793368918"></span>)</span> <button id="reloadbtn">↻ 更新</button> <button id="chromebtn">Chrome:OFF</button>
 <div class="nav"><span class="cur">フィード</span><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shiire.html">スキャナー</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/shinchaku.html">楽天新着</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/rakuten.html">楽天値下げ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/bookoff.html">ブックオフ</a><a href="https://trymyluck19-png.github.io/nesage-k7x2m9/yahoo.html">ヤフオク値下げ</a></div>
 <div class="filters"><button class="on" data-s="*">すべて</button><button data-s="メルカリ">メルカリ</button><button data-s="ヤフオク">ヤフオク</button><button data-s="Yフリマ">Yフリマ</button><button data-s="楽天">楽天</button><button data-s="ブックオフ">ブックオフ</button><button data-s="トレファク">トレファク</button><button data-s="スニダン">スニダン</button><button data-s="セカスト">セカスト</button><button data-s="オフモール">オフモール</button><button data-s="ドンサガ">ドンサガ</button><button data-s="KIND">KIND</button></div>
 </div>
-<div class="grid"><div class="card" data-src="トレファク">
+<div class="grid"><div class="card" data-src="メルカリ">
+<a class="thumb" href="https://jp.mercari.com/shops/product/2JRBwaaWamMGAT2BwXR9t8" target="_blank"><img src="https://assets.mercari-shops-static.com/-/large/plain/2JYrzN4GDe9EgrTUQ33TYK.jpg@webp" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥16,613</span></a>
+<div class="body">
+ <div class="price">¥10,500 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
+ <div class="name">アディダス adidas Yeezy Boost 350 V2 Bred CP9652 イージーブースト350 V2  スニーカー シューズ US8.5 26.</div>
+ <div class="meta"><span class="age" data-ts="1793368888"></span></div>
+ <div class="links"><a href="https://jp.mercari.com/shops/product/2JRBwaaWamMGAT2BwXR9t8" target="_blank">商品↗</a><a href="https://stockx.com/adidas-yeezy-boost-350-v2-core-black-red-2017" target="_blank">StockX↗</a></div>
+</div></div><div class="card" data-src="トレファク">
 <a class="thumb" href="https://www.trefac.jp/store/3036003632075190/c3244601/" target="_blank"><img src="https://www.trefac.jp/image/item/3036003632075190/w384/3036003632075190_01_0878w.jpeg" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥10,489</span></a>
 <div class="body">
  <div class="price">¥8,800 <span class="chip">トレファク</span><span class="chip k">利益</span></div>
@@ -3531,13 +3538,6 @@ body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;background:#1
  <div class="name">ナイキ  AIR FOAMPOSITE ONE PRM Olympic 575420-400 エアフォームポジットワンスニーカー メンズ 27cm</div>
  <div class="meta"><span class="age" data-ts="1793212064"></span></div>
  <div class="links"><a href="https://jp.mercari.com/shops/product/2JU4EM7hiWHZCbA6oSLwEq" target="_blank">商品↗</a><a href="https://stockx.com/foamposite-one-olympic" target="_blank">StockX↗</a></div>
-</div></div><div class="card" data-src="メルカリ">
-<a class="thumb" href="https://jp.mercari.com/item/m42780270114" target="_blank"><img src="https://static.mercdn.net/item/detail/orig/photos/m42780270114_1.jpg?1793210128" loading="lazy" referrerpolicy="no-referrer"><span class="badge good">+¥233</span></a>
-<div class="body">
- <div class="price">¥5,500 <span class="chip">メルカリ</span><span class="chip k">利益</span></div>
- <div class="name">NIKE DUNK LOW ライトグレー 新品 24.5cm</div>
- <div class="meta"><span class="age" data-ts="1793210550"></span></div>
- <div class="links"><a href="https://jp.mercari.com/item/m42780270114" target="_blank">商品↗</a><a href="https://stockx.com/nike-dunk-low-sail-light-bone-w" target="_blank">StockX↗</a></div>
 </div></div></div>
 <script>
 document.querySelectorAll(".filters button").forEach(b=>b.onclick=()=>{
@@ -3557,7 +3557,7 @@ tickAges();setInterval(tickAges,30000);
 
 const FEEDURL='https://raw.githubusercontent.com/trymyluck19-png/nesage-k7x2m9/main/feed.json';
 const FEEDAPI='https://api.github.com/repos/trymyluck19-png/nesage-k7x2m9/contents/feed.json?ref=main';
-let liveGen=1793368666;
+let liveGen=1793368918;
 const SHELLV=7;
 function cardEl(r){
  const d=document.createElement('div');d.className='card';d.dataset.src=r.src||'';
